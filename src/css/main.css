@@ -1,0 +1,23 @@
+
+
+
+/* Navigation */
+.nav-bar-container{
+    background-color: #c6c6c6;
+}
+
+.nav-items-sty{
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center !important;
+}
+
+/* Nav bar logo */
+.nav-logo{
+    font-family: 'Bodoni Moda', serif;
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    margin: 6px;
+    padding: 0.5%;
+}
