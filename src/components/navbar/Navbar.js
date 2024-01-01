@@ -15,15 +15,15 @@ const NavbarTop = () => {
         <Navbar.Brand className='nav-logo logo-rilo'>Rilo</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav nav-items-sty justify-content-center">
-          <Nav className="mr-auto nav-items-sty ms-auto ">
-            <Nav.Link href="#home">About Us</Nav.Link>
-            <Nav.Link href="#link">Projects</Nav.Link>
-            <NavDropdown title="Services" id="collapsible-nav-dropdown ">
-              <NavDropdown.Item href="#action/3.1 " className='collapse-navbar-items'>Villa</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className='collapse-navbar-items'>
+          <Nav className="mr-auto nav-items-sty ms-auto text-light ">
+            <Nav.Link href="#home" className='text-light'>About Us</Nav.Link>
+            <Nav.Link href="#link" className='text-light'>Projects</Nav.Link>
+            <NavDropdown title="Services" id="collapsible-nav-dropdown " className='text-light !important'>
+              <NavDropdown.Item href="#action/3.1 " className='collapse-navbar-items '>Villa</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2" className='collapse-navbar-items '>
                 Apartments
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" className='collapse-navbar-items'>ReBuild</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3" className='collapse-navbar-items '>ReBuild</NavDropdown.Item>
             </NavDropdown>
             <Button variant="" onClick={handleSearchClick} className='align-self-start '>
               <FaSearch />
