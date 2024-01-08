@@ -18,27 +18,27 @@ const NavbarTop = () => {
           <Nav className="mr-auto nav-items-sty ms-auto text-light ">
             <Nav.Link href="#home" className='text-light'>About Us</Nav.Link>
             <Nav.Link href="#link" className='text-light'>Projects</Nav.Link>
-            <NavDropdown title="Services" id="collapsible-nav-dropdown " className='text-light !important'>
+            <NavDropdown title="Services" id="collapsible-nav-dropdown" className='text-white !important service-navbar' style={{color:"white"}}>
               <NavDropdown.Item href="#action/3.1 " className='collapse-navbar-items '>Villa</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" className='collapse-navbar-items '>
                 Apartments
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3" className='collapse-navbar-items '>ReBuild</NavDropdown.Item>
             </NavDropdown>
-            <Button variant="" onClick={handleSearchClick} className='align-self-start '>
+            <Button variant="" onClick={handleSearchClick} className='align-self-start m-auto'>
               <FaSearch />
             </Button>
             {showSearch && (
               <div className="ml-2">
-                <input type="text" placeholder="Search..." className='me-2 rounded border-0'/>
-                <Button className='align-items-center ' >Search</Button>
+                <input type="text" placeholder="Search..." className='me-2 rounded border-0' />
+                <Button className='align-items-center' style={{color:"white"}} >Search</Button>
               </div>
-            
+
             )}
           </Nav>
           <div className='d-flex ms-auto me-2 sign-in-nav-bar '>
             <Nav.Link href="#deets">Sign In</Nav.Link>
-            </div>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

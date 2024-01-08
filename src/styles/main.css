@@ -4,6 +4,12 @@
 background: linear-gradient(158deg, rgba(2,0,36,0.4) 6%,  rgba(0, 228, 255, 1) 100%);
 
 }
+
+/* home container */
+.home-container{
+    height: 200vh;
+    max-height: 250vh !important;
+}
 .logo-rilo{
     font-size: 30px;
 }
@@ -21,12 +27,14 @@ background: linear-gradient(158deg, rgba(2,0,36,0.4) 6%,  rgba(0, 228, 255, 1) 1
 }
 
 .sign-in-nav-bar {
+    margin-bottom: 10px;
     border: 2px solid grey;
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 10px;
     transition: border-color 0.3s ease;
+    justify-content: center;
 }
 
 .sign-in-nav-bar:hover {
@@ -43,7 +51,15 @@ background: linear-gradient(158deg, rgba(2,0,36,0.4) 6%,  rgba(0, 228, 255, 1) 1
     margin: 6px;
     padding: 0.5%;
 }
-
+/* Navbar elements */
+.service-navbar{
+    color: white !important;
+}
+/* parallax */
+.parallax {
+    transition: transform 0.3s ease-out;
+  }
+  
 /* Mpc container */
 .mpc-container {
     height: 40vh;
@@ -55,7 +71,7 @@ background: linear-gradient(40deg, rgba(2,0,36,0.4) 0%, rgba(0,245,255,1) 100%);
 }
 
 .mpc-container img {
-    height: 42vh;
+    height: 50vh;
     width: fit-content;
 }
 
