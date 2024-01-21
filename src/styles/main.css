@@ -1,128 +1,176 @@
 /* Navigation */
 .nav-bar-container {
-    background: rgb(2,0,36);
-background: linear-gradient(158deg, rgba(2,0,36,0.4) 6%,  rgba(0, 228, 255, 1) 100%);
-
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    158deg,
+    rgba(2, 0, 36, 0.4) 6%,
+    rgba(0, 228, 255, 1) 100%
+  );
 }
 
 /* home container */
-.home-container{
-    height: 200vh;
-    max-height: 250vh !important;
+.home-container {
+  height: 200vh;
+  max-height: 250vh !important;
 }
-.logo-rilo{
-    font-size: 30px;
+.logo-rilo {
+  font-size: 30px;
 }
 
 .nav-items-sty {
-    display: flex !important;
-    flex-basis: auto;
-    font-weight: 500;
-    justify-content: center !important;
+  display: flex !important;
+  flex-basis: auto;
+  font-weight: 500;
+  justify-content: center !important;
 }
 
 .navbar .collapse-navbar-items:hover {
-    padding-left: 25px !important;
-    transition: 0.3s ease-in-out;
+  padding-left: 25px !important;
+  transition: 0.3s ease-in-out;
 }
 
 .sign-in-nav-bar {
-    margin-bottom: 10px;
-    border: 2px solid grey;
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10px;
-    transition: border-color 0.3s ease;
-    justify-content: center;
+  margin-bottom: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+  justify-content: center;
 }
 
 .sign-in-nav-bar:hover {
-    border-color: black;
-    animation-duration: 3.0s;
+  border-color: rgb(255, 255, 255);
+  animation-duration: 3s;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
 }
 
 /* Nav bar logo */
 .nav-logo {
-    font-family: 'Bodoni Moda', serif;
-    background-color: white;
-    border: 0;
-    border-radius: 5px;
-    margin: 6px;
-    padding: 0.5%;
+  font-family: "Bodoni Moda", serif;
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  margin: 6px;
+  padding: 0.5%;
 }
 /* Navbar elements */
-.service-navbar{
-    color: white !important;
+.service-navbar {
+  color: white !important;
 }
+#collapsible-nav-dropdown {
+  color: white;
+}
+.nav-bar-container {
+  transition: 0.3s ease-in;
+}
+.navbar-search input:focus {
+  outline: none;
+}
+.navbar-search button:focus {
+  outline: none;
+  border: none;
+}
+.nav-bar-container button:focus {
+  border: none;
+}
+
 /* parallax */
 .parallax {
-    transition: transform 0.3s ease-out;
-  }
-  
+  transition: transform 0.3s ease-out;
+}
+
 /* Mpc container */
 .mpc-container {
-    height: 40vh;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    background: rgb(2,0,36);
-background: linear-gradient(40deg, rgba(2,0,36,0.4) 0%, rgba(0,245,255,1) 100%);
+  height: 42vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    40deg,
+    rgba(2, 0, 36, 0.4) 0%,
+    rgba(0, 245, 255, 1) 100%
+  );
 }
 
 .mpc-container img {
-    height: 50vh;
-    width: fit-content;
+  height: 42vh;
+  width: fit-content;
 }
 
-.motto-mpc{
-    margin-right: 60px !important;
-    font-family: 'Montserrat'   ;
-    color: white;
-    font-weight: 600;
-    font-size: 38px;
+.motto-mpc {
+  margin-right: 60px !important;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.mpc-three-min {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mpc-three-min.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.step-container{
+    color: grey;
+}
+.step-container-heading{
+    color: black;
+    font-size: medium;
 }
 @media screen and (max-width: 790px) {
-    .motto-mpc{
-        font-size: 30px;
-        margin-right: 0 !important;
-    } 
+  .motto-mpc {
+    font-size: 30px;
+    margin-right: 0 !important;
+  }
 }
 
-@media (max-width: 576px){
-.container, .container-sm {
+@media (max-width: 576px) {
+  .container,
+  .container-sm {
     max-width: 532px;
-} .motto-mpc{
+  }
+  .motto-mpc {
     font-size: 30px;
-} 
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .container {
-        margin-right: 25px;
-        margin-left: 25px;
-    }
-    .mpc-container img{
-        height: 36vh;
-    }
+  .container {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  .mpc-container img {
+    height: 36vh;
+  }
 }
-
-
 
 @media screen and (max-width: 400px) {
-    .mpc-container img {
-        height: 33vh;
-        width: 100% !important;
-    }
-
+  .mpc-container img {
+    height: 33vh;
+    width: 100% !important;
+  }
 }
 
-@media screen and (max-width:350px) {
-    .mpc-container img{
-        height: 30vh;
-        width: auto;
-    }
-    .mpc-container{
-        height: fit-content;
-    }
+@media screen and (max-width: 350px) {
+  .mpc-container img {
+    height: 30vh;
+    width: auto;
+  }
+  .mpc-container {
+    height: fit-content;
+  }
 }
