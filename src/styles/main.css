@@ -131,6 +131,70 @@
     color: black;
     font-size: medium;
 }
+.process-container img {
+  height: 70px;
+  width: fit-content;
+}
+
+.process-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+}
+.project-container {
+  width: 100px;
+  height: 200px;
+  font-family: prompt;
+}
+.project-container img{
+  height: 150px;
+  width: auto;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.project-container img:hover{
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px 9px;
+}
+
+.project-container h3{
+  font-size: 20px;
+}
+
+.project-container p{
+  font-size: 10px;
+}
+.project-card{
+  padding: 10px;
+}
+.project-btn-placement{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Adjust the z-index as needed */
+  margin-top: 1rem; /* Adjust the margin-top as needed */
+}
+.left-btn {
+  left: 0;
+}
+.right-btn {
+  right: 0;
+}
+.project-button{
+  border:none ;
+}
+.steps-text{
+  font-size: 12px;
+  font-family: Prompt;
+  color: rgb(69, 69, 69);
+}
 @media screen and (max-width: 790px) {
   .motto-mpc {
     font-size: 30px;
